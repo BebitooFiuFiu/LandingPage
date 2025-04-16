@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #131313;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #131313;
+    padding: 20px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 20px 0;
+    gap: 0 20px;
+}
+a{
+    text-decoration: none;
+    color: #eeeeeea7;
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    &:hover{
+        color: white;
+        transition: all .3s linear;
+    }
+}
+figure{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    background-color: #131313;
+    color: white;
+    padding: 10px 0;
+}
+figure h2{
+    font-size: 40px;
+}
+header img{
+    width: 80px;
+}
+main{
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #131313;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.informacion{
+    max-width: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+}
+.informacion h1{
+    font-size: 50px;
+}
+.informacion p{
+    font-size: 1.3em;
+    color: #eeeeeea7;
+}
+.imagenes{
+    width: 600px;
+    height: 500px;
+    display: flex;
+    cursor: pointer;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 100%, 0.2);
+}
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: all .5s ease-in;
+    &:hover{
+        width: 50%;
+        filter: contrast(120%);
+    }
+}
+footer{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    color: white;
+    padding: 10px ;
+    text-transform: uppercase;
+    color: #eeeeeea7;
+    transition: all .3s linear;
+    &:hover{
+        color: white;
+    }
+}
