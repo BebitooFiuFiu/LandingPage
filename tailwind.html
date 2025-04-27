@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tailwind</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <figure>
+          <img src="./image/logo.png" alt="Logo de dota 2" />
+          <h2>Dota 2</h2>
+        </figure>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="compra.html">Compra</a></li>
+          <li><a href="#">Tailwind</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex justify-center items-center w-full h-[80vh]">
+        <div class="flex gap-[20px] w-[90%] max-w-[1200px] min-w-[350px] text-white justify-center">
+            <section class="flex flex-col justify-center items-center gap-[50px]  max-w-[600px]">
+                <h2 class="text-4xl font-bold">Pase de Batalla de Dota 2</h2>
+                <p class="text-gray-400">Completa misiones épicas, desbloquea recompensas exclusivas y sumérgete en contenido especial diseñado para llevar tu experiencia de juego a nuevas alturas en el Pase de Batalla de Dota 2.</p>
+                <div class="flex gap-[60px]">
+                    <div>
+                        <p class="text-2xl font-bold">10K+</p>
+                        <span class="text-gray-400">Comprados</span>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold">5K+</p>
+                        <span class="text-gray-400">Regalados</span>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold">300K+</p>
+                        <span class="text-gray-400">Recaudado</span>
+                    </div>
+                </div>
+            </section>
+            <img src="./image/battlePass.png" alt="" width="100%" class="hidden xl:block max-w-[600px]">
+        </div>
+    </main>
+    <footer>
+        <small>Luis Angel Chavez Arias | Contacto: 924 084 804 </small>
+    </footer>
+  </body>
+</html>
